@@ -1,0 +1,13 @@
+---
+- name: my copy
+  hosts: all
+  become: True
+  tasks:
+    - name: "SCORED | 5.3.2 | PATCH | Ensure lockout for failed password attempts is configured"
+      copy:
+        src: "{{ item.0 }}"
+        dest: "{{ item.1 }}"
+      with_together:
+        - ['roles/RHEL7-CIS/files/etc/pam.d/system-auth', 'roles/RHEL7-CIS/files/etc/pam.d/password-auth']
+        - ['/etc/pam.d/system-auth-ac', '/etc/pam.d/password-auth-ac']
+

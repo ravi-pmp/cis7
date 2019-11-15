@@ -6,7 +6,7 @@ automatic  name: "NOTSCORED | 3.6.4 | PATCH | Ensure outbound and established co
 manual  name: "SCORED | 3.6.5 | PATCH | Ensure firewall rules exist for all open ports"
 not_applicaion  name: "NOTSCORED | 3.7 | PATCH | Ensure wireless interfaces are disabled"
 done  name: "NOTSCORED | 6.1.1 | PATCH | Audit system file permissions"
- name: "SCORED | 6.1.10 | PATCH | Ensure no world writable files exist"
+done name: "SCORED | 6.1.10 | PATCH | Ensure no world writable files exist"
  name: "SCORED | 6.1.11 | PATCH | Ensure no unowned files or directories exist"
  name: "SCORED | 6.1.12 | PATCH | Ensure no ungrouped files or directories exist"
  name: "NOTSCORED | 6.1.13 | PATCH | Audit SUID executables"

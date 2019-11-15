@@ -4785,3 +4785,1585 @@ get rid of this message.
 2019-11-15 17:54:06,905 p=29666 u=ravi |  META: ran handlers
 2019-11-15 17:54:06,907 p=29666 u=ravi |  PLAY RECAP *****************************************************************************************************
 2019-11-15 17:54:06,907 p=29666 u=ravi |  172.16.240.129             : ok=81   changed=0    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2019-11-15 18:06:48,189 p=31876 u=ravi |  PLAY [Ansible Ad-Hoc] ******************************************************************************************
+2019-11-15 18:06:48,195 p=31876 u=ravi |  TASK [shell] ***************************************************************************************************
+2019-11-15 18:06:49,145 p=31876 u=ravi |  fatal: [172.16.240.129]: FAILED! => changed=true 
+  ansible_facts:
+    discovered_interpreter_python: /usr/bin/python
+  cmd: iptables -L
+  delta: '0:00:00.006123'
+  end: '2019-11-15 05:06:03.468108'
+  msg: non-zero return code
+  rc: 127
+  start: '2019-11-15 05:06:03.461985'
+  stderr: '/bin/sh: iptables: command not found'
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:06:49,146 p=31876 u=ravi |  PLAY RECAP *****************************************************************************************************
+2019-11-15 18:06:49,146 p=31876 u=ravi |  172.16.240.129             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-15 18:07:01,643 p=31927 u=ravi |  PLAY [Ansible Ad-Hoc] ******************************************************************************************
+2019-11-15 18:07:01,649 p=31927 u=ravi |  TASK [shell] ***************************************************************************************************
+2019-11-15 18:07:02,089 p=31927 u=ravi |  fatal: [172.16.240.129]: FAILED! => changed=true 
+  ansible_facts:
+    discovered_interpreter_python: /usr/bin/python
+  cmd: iptables -L
+  delta: '0:00:00.005061'
+  end: '2019-11-15 05:06:16.409041'
+  msg: non-zero return code
+  rc: 127
+  start: '2019-11-15 05:06:16.403980'
+  stderr: '/bin/sh: iptables: command not found'
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:07:02,090 p=31927 u=ravi |  PLAY RECAP *****************************************************************************************************
+2019-11-15 18:07:02,090 p=31927 u=ravi |  172.16.240.129             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-15 18:17:24,761 p=32527 u=ravi |  ansible-playbook 2.8.3
+  config file = /home/ravi/Documents/rhel/ansible.cfg
+  configured module search path = ['/home/ravi/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.7.5rc1 (default, Oct  8 2019, 16:47:45) [GCC 9.2.1 20191008]
+2019-11-15 18:17:24,761 p=32527 u=ravi |  Using /home/ravi/Documents/rhel/ansible.cfg as config file
+2019-11-15 18:17:24,979 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml
+2019-11-15 18:17:25,018 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section1.yml
+2019-11-15 18:17:25,081 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section2.yml
+2019-11-15 18:17:25,116 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section3.yml
+2019-11-15 18:17:25,142 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section4.yml
+2019-11-15 18:17:25,173 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml
+2019-11-15 18:17:25,200 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section6.yml
+2019-11-15 18:17:25,219 p=32527 u=ravi |  statically imported: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/post.yml
+2019-11-15 18:17:25,262 p=32527 u=ravi |  PLAYBOOK: harden.yml **************************************************************************************************
+2019-11-15 18:17:25,262 p=32527 u=ravi |  1 plays in harden.yml
+2019-11-15 18:17:25,287 p=32527 u=ravi |  PLAY [Harden Server] **************************************************************************************************
+2019-11-15 18:17:25,388 p=32527 u=ravi |  TASK [Gathering Facts] ************************************************************************************************
+2019-11-15 18:17:25,388 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/harden.yml:1
+2019-11-15 18:17:26,737 p=32527 u=ravi |  ok: [172.16.240.129]
+2019-11-15 18:17:26,738 p=32527 u=ravi |  META: ran handlers
+2019-11-15 18:17:26,747 p=32527 u=ravi |  TASK [RHEL7-CIS : Check OS version and family] ************************************************************************
+2019-11-15 18:17:26,748 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/main.yml:3
+2019-11-15 18:17:26,760 p=32527 u=ravi |  skipping: [172.16.240.129] => changed=false 
+  skip_reason: Conditional result was False
+2019-11-15 18:17:26,770 p=32527 u=ravi |  TASK [RHEL7-CIS : Check ansible version] ******************************************************************************
+2019-11-15 18:17:26,770 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/main.yml:12
+2019-11-15 18:17:26,784 p=32527 u=ravi |  skipping: [172.16.240.129] => changed=false 
+  skip_reason: Conditional result was False
+2019-11-15 18:17:26,792 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | List users accounts] ***********************************************************************
+2019-11-15 18:17:26,792 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:4
+2019-11-15 18:17:27,167 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - awk
+  - '-F:'
+  - '{print $1}'
+  - /etc/passwd
+  delta: '0:00:00.005244'
+  end: '2019-11-15 05:16:41.484323'
+  rc: 0
+  start: '2019-11-15 05:16:41.479079'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: |-
+    root
+    bin
+    daemon
+    adm
+    lp
+    sync
+    shutdown
+    halt
+    mail
+    operator
+    games
+    ftp
+    nobody
+    systemd-network
+    dbus
+    polkitd
+    sshd
+    postfix
+    chrony
+    ravi
+  stdout_lines: <omitted>
+2019-11-15 18:17:27,177 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Gather accounts with empty password fields] ************************************************
+2019-11-15 18:17:27,178 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:10
+2019-11-15 18:17:27,447 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: 'cat /etc/shadow | awk -F: ''($2 == "" ) {j++;print $1; } END {exit j}'''
+  delta: '0:00:00.006554'
+  end: '2019-11-15 05:16:41.759059'
+  rc: 0
+  start: '2019-11-15 05:16:41.752505'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:17:27,456 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Gather UID 0 accounts other than root] *****************************************************
+2019-11-15 18:17:27,456 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:16
+2019-11-15 18:17:27,722 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: 'cat /etc/passwd | awk -F: ''($3 == 0 && $1 != "root") {i++;print $1 } END {exit i}'''
+  delta: '0:00:00.006400'
+  end: '2019-11-15 05:16:42.040051'
+  rc: 0
+  start: '2019-11-15 05:16:42.033651'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:17:27,733 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Section 4.1 | Configure System Accounting (auditd)] ****************************************
+2019-11-15 18:17:27,733 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:22
+2019-11-15 18:17:38,135 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  msg: ''
+  rc: 0
+  results:
+  - audit-2.8.5-4.el7.x86_64 providing audit is already installed
+2019-11-15 18:17:38,153 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Section 5.1 | Configure cron] **************************************************************
+2019-11-15 18:17:38,153 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:27
+2019-11-15 18:17:48,064 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  msg: ''
+  rc: 0
+  results:
+  - cronie-1.4.11-23.el7.x86_64 providing cronie is already installed
+2019-11-15 18:17:48,081 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check if prelink package is installed] *****************************************************
+2019-11-15 18:17:48,082 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:32
+2019-11-15 18:17:48,405 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - rpm
+  - -q
+  - prelink
+  delta: '0:00:00.034684'
+  end: '2019-11-15 05:17:02.714672'
+  failed_when_result: false
+  msg: non-zero return code
+  rc: 1
+  start: '2019-11-15 05:17:02.679988'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: package prelink is not installed
+  stdout_lines: <omitted>
+2019-11-15 18:17:48,412 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check if postfix package is installed] *****************************************************
+2019-11-15 18:17:48,413 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:43
+2019-11-15 18:17:48,737 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - rpm
+  - -q
+  - postfix
+  delta: '0:00:00.034501'
+  end: '2019-11-15 05:17:03.054347'
+  failed_when_result: false
+  rc: 0
+  start: '2019-11-15 05:17:03.019846'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: postfix-2.10.1-7.el7.x86_64
+  stdout_lines: <omitted>
+2019-11-15 18:17:48,745 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for xinetd service] ******************************************************************
+2019-11-15 18:17:48,745 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:55
+2019-11-15 18:17:49,025 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show xinetd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.015985'
+  end: '2019-11-15 05:17:03.341513'
+  rc: 0
+  start: '2019-11-15 05:17:03.325528'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:49,036 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for ntpd service] ********************************************************************
+2019-11-15 18:17:49,036 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:63
+2019-11-15 18:17:49,306 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show ntpd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010854'
+  end: '2019-11-15 05:17:03.620903'
+  rc: 0
+  start: '2019-11-15 05:17:03.610049'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:49,317 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for chronyd service] *****************************************************************
+2019-11-15 18:17:49,317 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:72
+2019-11-15 18:17:49,587 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show chronyd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011224'
+  end: '2019-11-15 05:17:03.902439'
+  rc: 0
+  start: '2019-11-15 05:17:03.891215'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: loaded
+  stdout_lines: <omitted>
+2019-11-15 18:17:49,595 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for avahi-daemon service] ************************************************************
+2019-11-15 18:17:49,595 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:80
+2019-11-15 18:17:49,869 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show avahi-daemon | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010774'
+  end: '2019-11-15 05:17:04.184579'
+  rc: 0
+  start: '2019-11-15 05:17:04.173805'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:49,879 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for cups service] ********************************************************************
+2019-11-15 18:17:49,879 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:88
+2019-11-15 18:17:50,177 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show cups | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.012371'
+  end: '2019-11-15 05:17:04.488362'
+  rc: 0
+  start: '2019-11-15 05:17:04.475991'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:50,187 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for dhcpd service] *******************************************************************
+2019-11-15 18:17:50,187 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:96
+2019-11-15 18:17:50,477 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show dhcpd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011653'
+  end: '2019-11-15 05:17:04.792455'
+  rc: 0
+  start: '2019-11-15 05:17:04.780802'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:50,486 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for slapd service] *******************************************************************
+2019-11-15 18:17:50,486 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:104
+2019-11-15 18:17:50,758 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show slapd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.014450'
+  end: '2019-11-15 05:17:05.075085'
+  rc: 0
+  start: '2019-11-15 05:17:05.060635'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:50,766 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for nfs service] *********************************************************************
+2019-11-15 18:17:50,766 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:112
+2019-11-15 18:17:51,033 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show nfs | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010089'
+  end: '2019-11-15 05:17:05.349765'
+  rc: 0
+  start: '2019-11-15 05:17:05.339676'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:51,041 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for rpcbind service] *****************************************************************
+2019-11-15 18:17:51,042 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:120
+2019-11-15 18:17:51,312 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show rpcbind | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010770'
+  end: '2019-11-15 05:17:05.627233'
+  rc: 0
+  start: '2019-11-15 05:17:05.616463'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:51,322 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for named service] *******************************************************************
+2019-11-15 18:17:51,322 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:128
+2019-11-15 18:17:51,588 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show named | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011323'
+  end: '2019-11-15 05:17:05.903792'
+  rc: 0
+  start: '2019-11-15 05:17:05.892469'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:51,597 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for vsftpd service] ******************************************************************
+2019-11-15 18:17:51,597 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:136
+2019-11-15 18:17:51,872 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show vsftpd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011670'
+  end: '2019-11-15 05:17:06.186347'
+  rc: 0
+  start: '2019-11-15 05:17:06.174677'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:51,881 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for httpd service] *******************************************************************
+2019-11-15 18:17:51,882 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:144
+2019-11-15 18:17:52,153 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show httpd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.009732'
+  end: '2019-11-15 05:17:06.469307'
+  rc: 0
+  start: '2019-11-15 05:17:06.459575'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:52,162 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for dovecot service] *****************************************************************
+2019-11-15 18:17:52,162 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:152
+2019-11-15 18:17:52,456 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show dovecot | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.012464'
+  end: '2019-11-15 05:17:06.770219'
+  rc: 0
+  start: '2019-11-15 05:17:06.757755'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:52,465 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for smb service] *********************************************************************
+2019-11-15 18:17:52,465 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:160
+2019-11-15 18:17:52,737 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show smb | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011962'
+  end: '2019-11-15 05:17:07.053389'
+  rc: 0
+  start: '2019-11-15 05:17:07.041427'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:52,745 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for squid service] *******************************************************************
+2019-11-15 18:17:52,745 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:168
+2019-11-15 18:17:53,026 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show squid | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011153'
+  end: '2019-11-15 05:17:07.341981'
+  rc: 0
+  start: '2019-11-15 05:17:07.330828'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:53,035 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for snmpd service] *******************************************************************
+2019-11-15 18:17:53,035 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:176
+2019-11-15 18:17:53,301 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show snmpd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010636'
+  end: '2019-11-15 05:17:07.617449'
+  rc: 0
+  start: '2019-11-15 05:17:07.606813'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:53,311 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for ypserv service] ******************************************************************
+2019-11-15 18:17:53,311 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:184
+2019-11-15 18:17:53,589 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show ypserv | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010382'
+  end: '2019-11-15 05:17:07.904859'
+  rc: 0
+  start: '2019-11-15 05:17:07.894477'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:53,598 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for rsh.socket service] **************************************************************
+2019-11-15 18:17:53,598 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:192
+2019-11-15 18:17:53,866 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show rsh.socket | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010901'
+  end: '2019-11-15 05:17:08.180799'
+  rc: 0
+  start: '2019-11-15 05:17:08.169898'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:53,875 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for rlogin.socket service] ***********************************************************
+2019-11-15 18:17:53,876 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:200
+2019-11-15 18:17:54,148 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show rlogin.socket | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011288'
+  end: '2019-11-15 05:17:08.463467'
+  rc: 0
+  start: '2019-11-15 05:17:08.452179'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:54,158 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for rexec.socket service] ************************************************************
+2019-11-15 18:17:54,159 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:208
+2019-11-15 18:17:54,430 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show rexec.socket | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011680'
+  end: '2019-11-15 05:17:08.746640'
+  rc: 0
+  start: '2019-11-15 05:17:08.734960'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:54,440 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for telnet service] ******************************************************************
+2019-11-15 18:17:54,440 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:216
+2019-11-15 18:17:54,709 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show telnet | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.011352'
+  end: '2019-11-15 05:17:09.026658'
+  rc: 0
+  start: '2019-11-15 05:17:09.015306'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:54,718 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for tftp service] ********************************************************************
+2019-11-15 18:17:54,718 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:224
+2019-11-15 18:17:54,988 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show tftp | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010164'
+  end: '2019-11-15 05:17:09.302592'
+  rc: 0
+  start: '2019-11-15 05:17:09.292428'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:54,997 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for rsyncd service] ******************************************************************
+2019-11-15 18:17:54,997 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:232
+2019-11-15 18:17:55,271 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show rsyncd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010321'
+  end: '2019-11-15 05:17:09.588460'
+  rc: 0
+  start: '2019-11-15 05:17:09.578139'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:55,283 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for ntalk service] *******************************************************************
+2019-11-15 18:17:55,283 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:240
+2019-11-15 18:17:55,559 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show ntalk | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.013101'
+  end: '2019-11-15 05:17:09.874844'
+  rc: 0
+  start: '2019-11-15 05:17:09.861743'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:55,567 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for autofs service] ******************************************************************
+2019-11-15 18:17:55,567 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:248
+2019-11-15 18:17:55,844 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show autofs | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.010466'
+  end: '2019-11-15 05:17:10.157449'
+  rc: 0
+  start: '2019-11-15 05:17:10.146983'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: not-found
+  stdout_lines: <omitted>
+2019-11-15 18:17:55,853 p=32527 u=ravi |  TASK [RHEL7-CIS : PRELIM | Check for rhnsd service] *******************************************************************
+2019-11-15 18:17:55,853 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/prelim.yml:256
+2019-11-15 18:17:56,127 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: systemctl show rhnsd | grep LoadState | cut -d = -f 2
+  delta: '0:00:00.012641'
+  end: '2019-11-15 05:17:10.443816'
+  rc: 0
+  start: '2019-11-15 05:17:10.431175'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: loaded
+  stdout_lines: <omitted>
+2019-11-15 18:17:56,135 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.1 | PATCH | Ensure cron daemon is enabled] *********************************************
+2019-11-15 18:17:56,135 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:1
+2019-11-15 18:17:56,703 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  enabled: true
+  name: crond
+  status:
+    ActiveEnterTimestamp: Fri 2019-11-15 03:33:53 EST
+    ActiveEnterTimestampMonotonic: '5213768'
+    ActiveExitTimestampMonotonic: '0'
+    ActiveState: active
+    After: systemd-journald.socket time-sync.target basic.target auditd.service systemd-user-sessions.service system.slice
+    AllowIsolate: 'no'
+    AmbientCapabilities: '0'
+    AssertResult: 'yes'
+    AssertTimestamp: Fri 2019-11-15 03:33:53 EST
+    AssertTimestampMonotonic: '5210133'
+    Before: multi-user.target shutdown.target
+    BlockIOAccounting: 'no'
+    BlockIOWeight: '18446744073709551615'
+    CPUAccounting: 'no'
+    CPUQuotaPerSecUSec: infinity
+    CPUSchedulingPolicy: '0'
+    CPUSchedulingPriority: '0'
+    CPUSchedulingResetOnFork: 'no'
+    CPUShares: '18446744073709551615'
+    CanIsolate: 'no'
+    CanReload: 'yes'
+    CanStart: 'yes'
+    CanStop: 'yes'
+    CapabilityBoundingSet: '18446744073709551615'
+    ConditionResult: 'yes'
+    ConditionTimestamp: Fri 2019-11-15 03:33:53 EST
+    ConditionTimestampMonotonic: '5210133'
+    Conflicts: shutdown.target
+    ControlGroup: /system.slice/crond.service
+    ControlPID: '0'
+    DefaultDependencies: 'yes'
+    Delegate: 'no'
+    Description: Command Scheduler
+    DevicePolicy: auto
+    EnvironmentFile: /etc/sysconfig/crond (ignore_errors=no)
+    ExecMainCode: '0'
+    ExecMainExitTimestampMonotonic: '0'
+    ExecMainPID: '945'
+    ExecMainStartTimestamp: Fri 2019-11-15 03:33:53 EST
+    ExecMainStartTimestampMonotonic: '5213282'
+    ExecMainStatus: '0'
+    ExecReload: '{ path=/bin/kill ; argv[]=/bin/kill -HUP $MAINPID ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }'
+    ExecStart: '{ path=/usr/sbin/crond ; argv[]=/usr/sbin/crond -n $CRONDARGS ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }'
+    FailureAction: none
+    FileDescriptorStoreMax: '0'
+    FragmentPath: /usr/lib/systemd/system/crond.service
+    GuessMainPID: 'yes'
+    IOScheduling: '0'
+    Id: crond.service
+    IgnoreOnIsolate: 'no'
+    IgnoreOnSnapshot: 'no'
+    IgnoreSIGPIPE: 'yes'
+    InactiveEnterTimestampMonotonic: '0'
+    InactiveExitTimestamp: Fri 2019-11-15 03:33:53 EST
+    InactiveExitTimestampMonotonic: '5213768'
+    JobTimeoutAction: none
+    JobTimeoutUSec: '0'
+    KillMode: process
+    KillSignal: '15'
+    LimitAS: '18446744073709551615'
+    LimitCORE: '18446744073709551615'
+    LimitCPU: '18446744073709551615'
+    LimitDATA: '18446744073709551615'
+    LimitFSIZE: '18446744073709551615'
+    LimitLOCKS: '18446744073709551615'
+    LimitMEMLOCK: '65536'
+    LimitMSGQUEUE: '819200'
+    LimitNICE: '0'
+    LimitNOFILE: '4096'
+    LimitNPROC: '11216'
+    LimitRSS: '18446744073709551615'
+    LimitRTPRIO: '0'
+    LimitRTTIME: '18446744073709551615'
+    LimitSIGPENDING: '11216'
+    LimitSTACK: '18446744073709551615'
+    LoadState: loaded
+    MainPID: '945'
+    MemoryAccounting: 'no'
+    MemoryCurrent: '18446744073709551615'
+    MemoryLimit: '18446744073709551615'
+    MountFlags: '0'
+    Names: crond.service
+    NeedDaemonReload: 'no'
+    Nice: '0'
+    NoNewPrivileges: 'no'
+    NonBlocking: 'no'
+    NotifyAccess: none
+    OOMScoreAdjust: '0'
+    OnFailureJobMode: replace
+    PermissionsStartOnly: 'no'
+    PrivateDevices: 'no'
+    PrivateNetwork: 'no'
+    PrivateTmp: 'no'
+    ProtectHome: 'no'
+    ProtectSystem: 'no'
+    RefuseManualStart: 'no'
+    RefuseManualStop: 'no'
+    RemainAfterExit: 'no'
+    Requires: basic.target system.slice
+    Restart: on-failure
+    RestartUSec: 30s
+    Result: success
+    RootDirectoryStartOnly: 'no'
+    RuntimeDirectoryMode: '0755'
+    SameProcessGroup: 'no'
+    SecureBits: '0'
+    SendSIGHUP: 'no'
+    SendSIGKILL: 'yes'
+    Slice: system.slice
+    StandardError: inherit
+    StandardInput: 'null'
+    StandardOutput: journal
+    StartLimitAction: none
+    StartLimitBurst: '5'
+    StartLimitInterval: '10000000'
+    StartupBlockIOWeight: '18446744073709551615'
+    StartupCPUShares: '18446744073709551615'
+    StatusErrno: '0'
+    StopWhenUnneeded: 'no'
+    SubState: running
+    SyslogLevelPrefix: 'yes'
+    SyslogPriority: '30'
+    SystemCallErrorNumber: '0'
+    TTYReset: 'no'
+    TTYVHangup: 'no'
+    TTYVTDisallocate: 'no'
+    TasksAccounting: 'no'
+    TasksCurrent: '18446744073709551615'
+    TasksMax: '18446744073709551615'
+    TimeoutStartUSec: 1min 30s
+    TimeoutStopUSec: 1min 30s
+    TimerSlackNSec: '50000'
+    Transient: 'no'
+    Type: simple
+    UMask: '0022'
+    UnitFilePreset: enabled
+    UnitFileState: enabled
+    WantedBy: multi-user.target
+    WatchdogTimestamp: Fri 2019-11-15 03:33:53 EST
+    WatchdogTimestampMonotonic: '5213742'
+    WatchdogUSec: '0'
+2019-11-15 18:17:56,712 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.2 | PATCH | Ensure permissions on /etc/crontab are configured] *************************
+2019-11-15 18:17:56,712 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:13
+2019-11-15 18:17:57,112 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0600'
+  owner: root
+  path: /etc/crontab
+  secontext: system_u:object_r:system_cron_spool_t:s0
+  size: 524
+  state: file
+  uid: 0
+2019-11-15 18:17:57,122 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.3 | PATCH | Ensure permissions on /etc/cron.hourly are configured] *********************
+2019-11-15 18:17:57,123 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:27
+2019-11-15 18:17:57,423 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0700'
+  owner: root
+  path: /etc/cron.hourly
+  secontext: system_u:object_r:bin_t:s0
+  size: 22
+  state: directory
+  uid: 0
+2019-11-15 18:17:57,456 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.4 | PATCH | Ensure permissions on /etc/cron.daily are configured] **********************
+2019-11-15 18:17:57,456 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:42
+2019-11-15 18:17:57,727 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0700'
+  owner: root
+  path: /etc/cron.daily
+  secontext: system_u:object_r:bin_t:s0
+  size: 55
+  state: directory
+  uid: 0
+2019-11-15 18:17:57,738 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.5 | PATCH | Ensure permissions on /etc/cron.weekly are configured] *********************
+2019-11-15 18:17:57,738 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:57
+2019-11-15 18:17:58,006 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0700'
+  owner: root
+  path: /etc/cron.weekly
+  secontext: system_u:object_r:bin_t:s0
+  size: 6
+  state: directory
+  uid: 0
+2019-11-15 18:17:58,014 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.6 | PATCH | Ensure permissions on /etc/cron.monthly are configured] ********************
+2019-11-15 18:17:58,014 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:72
+2019-11-15 18:17:58,287 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0700'
+  owner: root
+  path: /etc/cron.monthly
+  secontext: system_u:object_r:bin_t:s0
+  size: 6
+  state: directory
+  uid: 0
+2019-11-15 18:17:58,295 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.7 | PATCH | Ensure permissions on /etc/cron.d are configured] **************************
+2019-11-15 18:17:58,295 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:87
+2019-11-15 18:17:58,565 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0700'
+  owner: root
+  path: /etc/cron.d
+  secontext: system_u:object_r:system_cron_spool_t:s0
+  size: 21
+  state: directory
+  uid: 0
+2019-11-15 18:17:58,575 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **************************
+2019-11-15 18:17:58,575 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:104
+2019-11-15 18:17:58,872 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  path: /etc/at.deny
+  state: absent
+2019-11-15 18:17:58,882 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.8 | PATCH | Check if at.allow exists] **************************************************
+2019-11-15 18:17:58,882 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:109
+2019-11-15 18:17:59,238 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  stat:
+    atime: 1573803830.3847568
+    attr_flags: ''
+    attributes: []
+    block_size: 4096
+    blocks: 0
+    charset: binary
+    checksum: da39a3ee5e6b4b0d3255bfef95601890afd80709
+    ctime: 1573803472.7262046
+    dev: 64768
+    device_type: 0
+    executable: false
+    exists: true
+    gid: 0
+    gr_name: root
+    inode: 25630008
+    isblk: false
+    ischr: false
+    isdir: false
+    isfifo: false
+    isgid: false
+    islnk: false
+    isreg: true
+    issock: false
+    isuid: false
+    mimetype: inode/x-empty
+    mode: '0600'
+    mtime: 1573803472.7262046
+    nlink: 1
+    path: /etc/at.allow
+    pw_name: root
+    readable: true
+    rgrp: false
+    roth: false
+    rusr: true
+    size: 0
+    uid: 0
+    version: '18446744071593749878'
+    wgrp: false
+    woth: false
+    writeable: true
+    wusr: true
+    xgrp: false
+    xoth: false
+    xusr: false
+2019-11-15 18:17:59,247 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **************************
+2019-11-15 18:17:59,247 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:114
+2019-11-15 18:17:59,513 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0600'
+  owner: root
+  path: /etc/at.allow
+  secontext: unconfined_u:object_r:etc_t:s0
+  size: 0
+  state: file
+  uid: 0
+2019-11-15 18:17:59,522 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **************************
+2019-11-15 18:17:59,523 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:122
+2019-11-15 18:17:59,788 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  path: /etc/cron.deny
+  state: absent
+2019-11-15 18:17:59,797 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.8 | PATCH | Check if cron.allow exists] ************************************************
+2019-11-15 18:17:59,798 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:127
+2019-11-15 18:18:00,082 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  stat:
+    atime: 1573803831.1697493
+    attr_flags: ''
+    attributes: []
+    block_size: 4096
+    blocks: 0
+    charset: binary
+    checksum: da39a3ee5e6b4b0d3255bfef95601890afd80709
+    ctime: 1573803473.4821982
+    dev: 64768
+    device_type: 0
+    executable: false
+    exists: true
+    gid: 0
+    gr_name: root
+    inode: 25630010
+    isblk: false
+    ischr: false
+    isdir: false
+    isfifo: false
+    isgid: false
+    islnk: false
+    isreg: true
+    issock: false
+    isuid: false
+    mimetype: inode/x-empty
+    mode: '0600'
+    mtime: 1573803473.4821982
+    nlink: 1
+    path: /etc/cron.allow
+    pw_name: root
+    readable: true
+    rgrp: false
+    roth: false
+    rusr: true
+    size: 0
+    uid: 0
+    version: '1138509308'
+    wgrp: false
+    woth: false
+    writeable: true
+    wusr: true
+    xgrp: false
+    xoth: false
+    xusr: false
+2019-11-15 18:18:00,090 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **************************
+2019-11-15 18:18:00,090 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:132
+2019-11-15 18:18:00,357 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0600'
+  owner: root
+  path: /etc/cron.allow
+  secontext: unconfined_u:object_r:etc_t:s0
+  size: 0
+  state: file
+  uid: 0
+2019-11-15 18:18:00,366 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.1 | PATCH | Ensure permissions on /etc/ssh/sshd_config are configured] *****************
+2019-11-15 18:18:00,366 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:147
+2019-11-15 18:18:00,667 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  gid: 0
+  group: root
+  mode: '0600'
+  owner: root
+  path: /etc/ssh/sshd_config
+  secontext: system_u:object_r:etc_t:s0
+  size: 4308
+  state: file
+  uid: 0
+2019-11-15 18:18:00,677 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.2 | PATCH | Ensure SSH Protocol is set to 2] *******************************************
+2019-11-15 18:18:00,677 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:162
+2019-11-15 18:18:01,024 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:01,033 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.3 | PATCH | Ensure SSH LogLevel is set to INFO] ****************************************
+2019-11-15 18:18:01,033 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:176
+2019-11-15 18:18:01,296 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:01,305 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.4 | PATCH | Ensure SSH X11 forwarding is disabled] *************************************
+2019-11-15 18:18:01,306 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:190
+2019-11-15 18:18:01,573 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:01,583 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.5 | PATCH | Ensure SSH MaxAuthTries is set to 4 or less] *******************************
+2019-11-15 18:18:01,583 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:204
+2019-11-15 18:18:01,852 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:01,860 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.6 | PATCH | Ensure SSH IgnoreRhosts is enabled] ****************************************
+2019-11-15 18:18:01,860 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:218
+2019-11-15 18:18:02,170 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:02,180 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.7 | PATCH | Ensure SSH HostbasedAuthentication is disabled] ****************************
+2019-11-15 18:18:02,181 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:232
+2019-11-15 18:18:02,450 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:02,459 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.8 | PATCH | Ensure SSH root login is disabled] *****************************************
+2019-11-15 18:18:02,459 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:246
+2019-11-15 18:18:02,728 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:02,738 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.9 | PATCH | Ensure SSH PermitEmptyPasswords is disabled] *******************************
+2019-11-15 18:18:02,738 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:260
+2019-11-15 18:18:03,001 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:03,009 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.10 | PATCH | Ensure SSH PermitUserEnvironment is disabled] *****************************
+2019-11-15 18:18:03,009 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:274
+2019-11-15 18:18:03,277 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:03,285 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.11 | PATCH | Ensure only approved ciphers are used] ************************************
+2019-11-15 18:18:03,285 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:288
+2019-11-15 18:18:03,586 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:03,595 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.12 | PATCH | Ensure only approved MAC algorithms are used] *****************************
+2019-11-15 18:18:03,595 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:302
+2019-11-15 18:18:03,862 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:03,871 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.13 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***************************
+2019-11-15 18:18:03,871 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:318
+2019-11-15 18:18:04,133 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:04,142 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.13 | PATCH | Ensure SSH ClientAliveCountMax set to <= 3] *******************************
+2019-11-15 18:18:04,142 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:325
+2019-11-15 18:18:04,408 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:04,416 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.14 | PATCH | Ensure SSH LoginGraceTime is set to one minute or less] *******************
+2019-11-15 18:18:04,416 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:339
+2019-11-15 18:18:04,706 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:04,715 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.15 | PATCH | Ensure SSH access is limited - allowusers] ********************************
+2019-11-15 18:18:04,715 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:355
+2019-11-15 18:18:04,730 p=32527 u=ravi |  skipping: [172.16.240.129] => changed=false 
+  skip_reason: Conditional result was False
+2019-11-15 18:18:04,740 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.15 | PATCH | Ensure SSH access is limited - allowgroups] *******************************
+2019-11-15 18:18:04,740 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:366
+2019-11-15 18:18:04,758 p=32527 u=ravi |  skipping: [172.16.240.129] => changed=false 
+  skip_reason: Conditional result was False
+2019-11-15 18:18:04,767 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.15 | PATCH | Ensure SSH access is limited - denyusers] *********************************
+2019-11-15 18:18:04,767 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:377
+2019-11-15 18:18:04,782 p=32527 u=ravi |  skipping: [172.16.240.129] => changed=false 
+  skip_reason: Conditional result was False
+2019-11-15 18:18:04,791 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.15 | PATCH | Ensure SSH access is limited - denygroups] ********************************
+2019-11-15 18:18:04,791 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:388
+2019-11-15 18:18:04,809 p=32527 u=ravi |  skipping: [172.16.240.129] => changed=false 
+  skip_reason: Conditional result was False
+2019-11-15 18:18:04,819 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.2.16 | PATCH | Ensure SSH warning banner is configured] **********************************
+2019-11-15 18:18:04,819 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:406
+2019-11-15 18:18:05,095 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:05,110 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.3.1 | PATCH | Ensure password creation requirements are configured] **********************
+2019-11-15 18:18:05,110 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:420
+2019-11-15 18:18:05,387 p=32527 u=ravi |  ok: [172.16.240.129] => (item={'key': 'minlen', 'value': '14'}) => changed=false 
+  ansible_loop_var: item
+  backup: ''
+  item:
+    key: minlen
+    value: '14'
+  msg: ''
+2019-11-15 18:18:05,675 p=32527 u=ravi |  ok: [172.16.240.129] => (item={'key': 'dcredit', 'value': '-1'}) => changed=false 
+  ansible_loop_var: item
+  backup: ''
+  item:
+    key: dcredit
+    value: '-1'
+  msg: ''
+2019-11-15 18:18:05,933 p=32527 u=ravi |  ok: [172.16.240.129] => (item={'key': 'ucredit', 'value': '-1'}) => changed=false 
+  ansible_loop_var: item
+  backup: ''
+  item:
+    key: ucredit
+    value: '-1'
+  msg: ''
+2019-11-15 18:18:06,190 p=32527 u=ravi |  ok: [172.16.240.129] => (item={'key': 'ocredit', 'value': '-1'}) => changed=false 
+  ansible_loop_var: item
+  backup: ''
+  item:
+    key: ocredit
+    value: '-1'
+  msg: ''
+2019-11-15 18:18:06,447 p=32527 u=ravi |  ok: [172.16.240.129] => (item={'key': 'lcredit', 'value': '-1'}) => changed=false 
+  ansible_loop_var: item
+  backup: ''
+  item:
+    key: lcredit
+    value: '-1'
+  msg: ''
+2019-11-15 18:18:06,458 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.3.2 | PATCH | Ensure lockout for failed password attempts is configured
+ SCORED | 5.3.3 | PATCH | Ensure password reuse is limited] ***
+2019-11-15 18:18:06,458 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:440
+2019-11-15 18:18:06,931 p=32527 u=ravi |  ok: [172.16.240.129] => (item=['etc/pam.d/system-auth', '/etc/pam.d/system-auth-ac']) => changed=false 
+  ansible_loop_var: item
+  checksum: 2233fe9190b8e849703ee6f86cf3fbedbfeb72f8
+  dest: /etc/pam.d/system-auth-ac
+  gid: 0
+  group: root
+  item:
+  - etc/pam.d/system-auth
+  - /etc/pam.d/system-auth-ac
+  mode: '0644'
+  owner: root
+  path: /etc/pam.d/system-auth-ac
+  secontext: system_u:object_r:etc_t:s0
+  size: 1087
+  state: file
+  uid: 0
+2019-11-15 18:18:07,395 p=32527 u=ravi |  ok: [172.16.240.129] => (item=['etc/pam.d/password-auth', '/etc/pam.d/password-auth-ac']) => changed=false 
+  ansible_loop_var: item
+  checksum: 2233fe9190b8e849703ee6f86cf3fbedbfeb72f8
+  dest: /etc/pam.d/password-auth-ac
+  gid: 0
+  group: root
+  item:
+  - etc/pam.d/password-auth
+  - /etc/pam.d/password-auth-ac
+  mode: '0644'
+  owner: root
+  path: /etc/pam.d/password-auth-ac
+  secontext: system_u:object_r:etc_t:s0
+  size: 1087
+  state: file
+  uid: 0
+2019-11-15 18:18:07,405 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.3.4 | PATCH | Ensure password hashing algorithm is SHA-512] ******************************
+2019-11-15 18:18:07,405 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:462
+2019-11-15 18:18:07,738 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - authconfig
+  - --passalgo=sha512
+  - --update
+  delta: '0:00:00.071692'
+  end: '2019-11-15 05:17:22.054417'
+  failed_when_result: false
+  rc: 0
+  start: '2019-11-15 05:17:21.982725'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:18:07,750 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.1.1 | PATCH | Ensure password expiration is 90 days or less] ***************************
+2019-11-15 18:18:07,750 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:474
+2019-11-15 18:18:08,030 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:08,038 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.1.2 | PATCH | Ensure minimum days between password changes is 7 or more] ***************
+2019-11-15 18:18:08,038 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:488
+2019-11-15 18:18:08,305 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:08,314 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.1.3 | PATCH | Ensure password expiration warning days is 7 or more] ********************
+2019-11-15 18:18:08,314 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:502
+2019-11-15 18:18:08,588 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:08,599 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.1.4 | PATCH | Ensure inactive password lock is 30 days or less] ************************
+2019-11-15 18:18:08,599 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:516
+2019-11-15 18:18:08,870 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: useradd -D -f 30
+  delta: '0:00:00.008976'
+  end: '2019-11-15 05:17:23.185085'
+  rc: 0
+  start: '2019-11-15 05:17:23.176109'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:18:08,879 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.2 | PATCH | Ensure system accounts are non-login] **************************************
+2019-11-15 18:18:08,880 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:528
+2019-11-15 18:18:09,174 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd: 'awk -F: ''($3 < 1000) {print $1 }'' /etc/passwd'
+  delta: '0:00:00.007226'
+  end: '2019-11-15 05:17:23.485940'
+  rc: 0
+  start: '2019-11-15 05:17:23.478714'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: |-
+    root
+    bin
+    daemon
+    adm
+    lp
+    sync
+    shutdown
+    halt
+    mail
+    operator
+    games
+    ftp
+    nobody
+    systemd-network
+    dbus
+    polkitd
+    sshd
+    postfix
+    chrony
+  stdout_lines: <omitted>
+2019-11-15 18:18:09,183 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.2 | PATCH | Ensure system accounts are non-login] **************************************
+2019-11-15 18:18:09,183 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:540
+2019-11-15 18:18:09,205 p=32527 u=ravi |  skipping: [172.16.240.129] => (item=root)  => changed=false 
+  ansible_loop_var: item
+  item: root
+  skip_reason: Conditional result was False
+2019-11-15 18:18:09,625 p=32527 u=ravi |  ok: [172.16.240.129] => (item=bin) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: bin
+  group: 1
+  home: /bin
+  item: bin
+  move_home: false
+  name: bin
+  shell: /sbin/nologin
+  state: present
+  uid: 1
+2019-11-15 18:18:09,918 p=32527 u=ravi |  ok: [172.16.240.129] => (item=daemon) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: daemon
+  group: 2
+  home: /sbin
+  item: daemon
+  move_home: false
+  name: daemon
+  shell: /sbin/nologin
+  state: present
+  uid: 2
+2019-11-15 18:18:10,203 p=32527 u=ravi |  ok: [172.16.240.129] => (item=adm) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: adm
+  group: 4
+  home: /var/adm
+  item: adm
+  move_home: false
+  name: adm
+  shell: /sbin/nologin
+  state: present
+  uid: 3
+2019-11-15 18:18:10,489 p=32527 u=ravi |  ok: [172.16.240.129] => (item=lp) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: lp
+  group: 7
+  home: /var/spool/lpd
+  item: lp
+  move_home: false
+  name: lp
+  shell: /sbin/nologin
+  state: present
+  uid: 4
+2019-11-15 18:18:10,774 p=32527 u=ravi |  ok: [172.16.240.129] => (item=sync) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: sync
+  group: 0
+  home: /sbin
+  item: sync
+  move_home: false
+  name: sync
+  shell: /bin/sync
+  state: present
+  uid: 5
+2019-11-15 18:18:11,057 p=32527 u=ravi |  ok: [172.16.240.129] => (item=shutdown) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: shutdown
+  group: 0
+  home: /sbin
+  item: shutdown
+  move_home: false
+  name: shutdown
+  shell: /sbin/shutdown
+  state: present
+  uid: 6
+2019-11-15 18:18:11,339 p=32527 u=ravi |  ok: [172.16.240.129] => (item=halt) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: halt
+  group: 0
+  home: /sbin
+  item: halt
+  move_home: false
+  name: halt
+  shell: /sbin/halt
+  state: present
+  uid: 7
+2019-11-15 18:18:11,628 p=32527 u=ravi |  ok: [172.16.240.129] => (item=mail) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: mail
+  group: 12
+  home: /var/spool/mail
+  item: mail
+  move_home: false
+  name: mail
+  shell: /sbin/nologin
+  state: present
+  uid: 8
+2019-11-15 18:18:11,915 p=32527 u=ravi |  ok: [172.16.240.129] => (item=operator) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: operator
+  group: 0
+  home: /root
+  item: operator
+  move_home: false
+  name: operator
+  shell: /sbin/nologin
+  state: present
+  uid: 11
+2019-11-15 18:18:12,205 p=32527 u=ravi |  ok: [172.16.240.129] => (item=games) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: games
+  group: 100
+  home: /usr/games
+  item: games
+  move_home: false
+  name: games
+  shell: /sbin/nologin
+  state: present
+  uid: 12
+2019-11-15 18:18:12,500 p=32527 u=ravi |  ok: [172.16.240.129] => (item=ftp) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: FTP User
+  group: 50
+  home: /var/ftp
+  item: ftp
+  move_home: false
+  name: ftp
+  shell: /sbin/nologin
+  state: present
+  uid: 14
+2019-11-15 18:18:12,782 p=32527 u=ravi |  ok: [172.16.240.129] => (item=nobody) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: Nobody
+  group: 99
+  home: /
+  item: nobody
+  move_home: false
+  name: nobody
+  shell: /sbin/nologin
+  state: present
+  uid: 99
+2019-11-15 18:18:13,063 p=32527 u=ravi |  ok: [172.16.240.129] => (item=systemd-network) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: systemd Network Management
+  group: 192
+  home: /
+  item: systemd-network
+  move_home: false
+  name: systemd-network
+  shell: /sbin/nologin
+  state: present
+  uid: 192
+2019-11-15 18:18:13,388 p=32527 u=ravi |  ok: [172.16.240.129] => (item=dbus) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: System message bus
+  group: 81
+  home: /
+  item: dbus
+  move_home: false
+  name: dbus
+  shell: /sbin/nologin
+  state: present
+  uid: 81
+2019-11-15 18:18:13,678 p=32527 u=ravi |  ok: [172.16.240.129] => (item=polkitd) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: User for polkitd
+  group: 998
+  home: /
+  item: polkitd
+  move_home: false
+  name: polkitd
+  shell: /sbin/nologin
+  state: present
+  uid: 999
+2019-11-15 18:18:13,975 p=32527 u=ravi |  ok: [172.16.240.129] => (item=sshd) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: Privilege-separated SSH
+  group: 74
+  home: /var/empty/sshd
+  item: sshd
+  move_home: false
+  name: sshd
+  shell: /sbin/nologin
+  state: present
+  uid: 74
+2019-11-15 18:18:14,256 p=32527 u=ravi |  ok: [172.16.240.129] => (item=postfix) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: ''
+  group: 89
+  home: /var/spool/postfix
+  item: postfix
+  move_home: false
+  name: postfix
+  shell: /sbin/nologin
+  state: present
+  uid: 89
+2019-11-15 18:18:14,575 p=32527 u=ravi |  ok: [172.16.240.129] => (item=chrony) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: ''
+  group: 996
+  home: /var/lib/chrony
+  item: chrony
+  move_home: false
+  name: chrony
+  shell: /sbin/nologin
+  state: present
+  uid: 998
+2019-11-15 18:18:14,585 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.2 | PATCH | Ensure system accounts are non-login] **************************************
+2019-11-15 18:18:14,585 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:555
+2019-11-15 18:18:14,606 p=32527 u=ravi |  skipping: [172.16.240.129] => (item=root)  => changed=false 
+  ansible_loop_var: item
+  item: root
+  skip_reason: Conditional result was False
+2019-11-15 18:18:14,894 p=32527 u=ravi |  ok: [172.16.240.129] => (item=bin) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: bin
+  group: 1
+  home: /bin
+  item: bin
+  move_home: false
+  name: bin
+  shell: /sbin/nologin
+  state: present
+  uid: 1
+2019-11-15 18:18:15,216 p=32527 u=ravi |  ok: [172.16.240.129] => (item=daemon) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: daemon
+  group: 2
+  home: /sbin
+  item: daemon
+  move_home: false
+  name: daemon
+  shell: /sbin/nologin
+  state: present
+  uid: 2
+2019-11-15 18:18:15,504 p=32527 u=ravi |  ok: [172.16.240.129] => (item=adm) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: adm
+  group: 4
+  home: /var/adm
+  item: adm
+  move_home: false
+  name: adm
+  shell: /sbin/nologin
+  state: present
+  uid: 3
+2019-11-15 18:18:15,791 p=32527 u=ravi |  ok: [172.16.240.129] => (item=lp) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: lp
+  group: 7
+  home: /var/spool/lpd
+  item: lp
+  move_home: false
+  name: lp
+  shell: /sbin/nologin
+  state: present
+  uid: 4
+2019-11-15 18:18:15,800 p=32527 u=ravi |  skipping: [172.16.240.129] => (item=sync)  => changed=false 
+  ansible_loop_var: item
+  item: sync
+  skip_reason: Conditional result was False
+2019-11-15 18:18:15,811 p=32527 u=ravi |  skipping: [172.16.240.129] => (item=shutdown)  => changed=false 
+  ansible_loop_var: item
+  item: shutdown
+  skip_reason: Conditional result was False
+2019-11-15 18:18:15,821 p=32527 u=ravi |  skipping: [172.16.240.129] => (item=halt)  => changed=false 
+  ansible_loop_var: item
+  item: halt
+  skip_reason: Conditional result was False
+2019-11-15 18:18:16,110 p=32527 u=ravi |  ok: [172.16.240.129] => (item=mail) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: mail
+  group: 12
+  home: /var/spool/mail
+  item: mail
+  move_home: false
+  name: mail
+  shell: /sbin/nologin
+  state: present
+  uid: 8
+2019-11-15 18:18:16,443 p=32527 u=ravi |  ok: [172.16.240.129] => (item=operator) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: operator
+  group: 0
+  home: /root
+  item: operator
+  move_home: false
+  name: operator
+  shell: /sbin/nologin
+  state: present
+  uid: 11
+2019-11-15 18:18:16,735 p=32527 u=ravi |  ok: [172.16.240.129] => (item=games) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: games
+  group: 100
+  home: /usr/games
+  item: games
+  move_home: false
+  name: games
+  shell: /sbin/nologin
+  state: present
+  uid: 12
+2019-11-15 18:18:17,025 p=32527 u=ravi |  ok: [172.16.240.129] => (item=ftp) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: FTP User
+  group: 50
+  home: /var/ftp
+  item: ftp
+  move_home: false
+  name: ftp
+  shell: /sbin/nologin
+  state: present
+  uid: 14
+2019-11-15 18:18:17,320 p=32527 u=ravi |  ok: [172.16.240.129] => (item=nobody) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: Nobody
+  group: 99
+  home: /
+  item: nobody
+  move_home: false
+  name: nobody
+  shell: /sbin/nologin
+  state: present
+  uid: 99
+2019-11-15 18:18:17,612 p=32527 u=ravi |  ok: [172.16.240.129] => (item=systemd-network) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: systemd Network Management
+  group: 192
+  home: /
+  item: systemd-network
+  move_home: false
+  name: systemd-network
+  shell: /sbin/nologin
+  state: present
+  uid: 192
+2019-11-15 18:18:17,908 p=32527 u=ravi |  ok: [172.16.240.129] => (item=dbus) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: System message bus
+  group: 81
+  home: /
+  item: dbus
+  move_home: false
+  name: dbus
+  shell: /sbin/nologin
+  state: present
+  uid: 81
+2019-11-15 18:18:18,200 p=32527 u=ravi |  ok: [172.16.240.129] => (item=polkitd) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: User for polkitd
+  group: 998
+  home: /
+  item: polkitd
+  move_home: false
+  name: polkitd
+  shell: /sbin/nologin
+  state: present
+  uid: 999
+2019-11-15 18:18:18,485 p=32527 u=ravi |  ok: [172.16.240.129] => (item=sshd) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: Privilege-separated SSH
+  group: 74
+  home: /var/empty/sshd
+  item: sshd
+  move_home: false
+  name: sshd
+  shell: /sbin/nologin
+  state: present
+  uid: 74
+2019-11-15 18:18:18,776 p=32527 u=ravi |  ok: [172.16.240.129] => (item=postfix) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: ''
+  group: 89
+  home: /var/spool/postfix
+  item: postfix
+  move_home: false
+  name: postfix
+  shell: /sbin/nologin
+  state: present
+  uid: 89
+2019-11-15 18:18:19,071 p=32527 u=ravi |  ok: [172.16.240.129] => (item=chrony) => changed=false 
+  ansible_loop_var: item
+  append: false
+  comment: ''
+  group: 996
+  home: /var/lib/chrony
+  item: chrony
+  move_home: false
+  name: chrony
+  shell: /sbin/nologin
+  state: present
+  uid: 998
+2019-11-15 18:18:19,083 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.3 | PATCH | Ensure default group for the root account is GID 0] ************************
+2019-11-15 18:18:19,083 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:573
+2019-11-15 18:18:19,352 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - usermod
+  - -g
+  - '0'
+  - root
+  delta: '0:00:00.005734'
+  end: '2019-11-15 05:17:33.667845'
+  failed_when_result: false
+  rc: 0
+  start: '2019-11-15 05:17:33.662111'
+  stderr: 'usermod: no changes'
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:18:19,361 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive - /etc/bashrc] ********
+2019-11-15 18:18:19,361 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:587
+2019-11-15 18:18:19,705 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  msg: ''
+2019-11-15 18:18:19,714 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive - /etc/profile] *******
+2019-11-15 18:18:19,714 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:593
+2019-11-15 18:18:19,981 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  msg: ''
+2019-11-15 18:18:19,991 p=32527 u=ravi |  TASK [RHEL7-CIS : NOTSCORED | 5.5 | PATCH | Ensure root login is restricted to system console] ************************
+2019-11-15 18:18:19,991 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:606
+2019-11-15 18:18:20,258 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - /bin/true
+  delta: '0:00:00.003288'
+  end: '2019-11-15 05:17:34.574083'
+  rc: 0
+  start: '2019-11-15 05:17:34.570795'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+2019-11-15 18:18:20,269 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.6 | PATCH | Ensure access to the su command is restricted] *******************************
+2019-11-15 18:18:20,269 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:616
+2019-11-15 18:18:20,566 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  backup: ''
+  msg: ''
+2019-11-15 18:18:20,576 p=32527 u=ravi |  TASK [RHEL7-CIS : SCORED | 5.6 | PATCH | Ensure access to the su command is restricted - wheel group contains root] ***
+2019-11-15 18:18:20,576 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/section5.yml:628
+2019-11-15 18:18:20,865 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  append: false
+  comment: root
+  group: 0
+  groups: wheel
+  home: /root
+  move_home: false
+  name: root
+  shell: /bin/bash
+  state: present
+  uid: 0
+2019-11-15 18:18:20,874 p=32527 u=ravi |  TASK [RHEL7-CIS : Perform YUM package cleanup] ************************************************************************
+2019-11-15 18:18:20,874 p=32527 u=ravi |  task path: /home/ravi/Documents/rhel/roles/RHEL7-CIS/tasks/post.yml:4
+2019-11-15 18:18:25,049 p=32527 u=ravi |   [WARNING]: Consider using the yum module rather than running 'yum'.  If you need to use command because yum is
+insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in ansible.cfg to get rid
+of this message.
+
+2019-11-15 18:18:25,058 p=32527 u=ravi |  ok: [172.16.240.129] => changed=false 
+  cmd:
+  - yum
+  - -y
+  - autoremove
+  delta: '0:00:03.908626'
+  end: '2019-11-15 05:17:39.365836'
+  rc: 0
+  start: '2019-11-15 05:17:35.457210'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: |-
+    Loaded plugins: product-id, search-disabled-repos, subscription-manager
+    No Packages marked for removal
+  stdout_lines: <omitted>
+2019-11-15 18:18:25,059 p=32527 u=ravi |  META: ran handlers
+2019-11-15 18:18:25,059 p=32527 u=ravi |  META: ran handlers
+2019-11-15 18:18:25,060 p=32527 u=ravi |  PLAY RECAP ************************************************************************************************************
+2019-11-15 18:18:25,060 p=32527 u=ravi |  172.16.240.129             : ok=80   changed=0    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   

@@ -437,7 +437,8 @@
       - patch
       - rule_5.3.1
 
-- name: "SCORED | 5.3.2 | PATCH | Ensure lockout for failed password attempts is configured"
+- name: "SCORED | 5.3.2 | PATCH | Ensure lockout for failed password attempts is configured\n
+         SCORED | 5.3.3 | PATCH | Ensure password reuse is limited"
   copy: 
     src: "{{ item.0 }}"
     dest: "{{ item.1 }}"
@@ -445,27 +446,18 @@
   with_together:
     - [ 'etc/pam.d/system-auth', 'etc/pam.d/password-auth' ]
     - [ /etc/pam.d/system-auth-ac, /etc/pam.d/password-auth-ac ]
-    #changed_when: no
-  when:
-      - rhel7cis_rule_5_3_2|bool
-  tags:
-      - level1
-      - level2
-      - patch
-      - rule_5.3.2
-      - notimplemented
-
-- name: "SCORED | 5.3.3 | PATCH | Ensure password reuse is limited"
-  command: /bin/true
   changed_when: no
   when:
+      - rhel7cis_rule_5_3_2|bool
       - rhel7cis_rule_5_3_3|bool
   tags:
       - level1
       - level2
       - patch
+      - rule_5.3.2
       - rule_5.3.3
       - notimplemented
+
 
 - name: "SCORED | 5.3.4 | PATCH | Ensure password hashing algorithm is SHA-512"
   command: authconfig --passalgo=sha512 --update

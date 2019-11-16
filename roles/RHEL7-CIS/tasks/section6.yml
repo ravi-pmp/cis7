@@ -150,7 +150,8 @@
       - notimplemented
 
 - name: "SCORED | 6.1.12 | PATCH | Ensure no ungrouped files or directories exist"
-  command: /bin/true
+  script: "script/6-1-12.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_1_12|bool
@@ -162,7 +163,8 @@
       - notimplemented
 
 - name: "NOTSCORED | 6.1.13 | PATCH | Audit SUID executables"
-  command: /bin/true
+  script: "script/6-1-13.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_1_13|bool
@@ -174,7 +176,8 @@
       - notimplemented
 
 - name: "NOTSCORED | 6.1.14 | PATCH | Audit SGID executables"
-  command: /bin/true
+  script: "script/6-1-14.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_1_14|bool
@@ -253,7 +256,8 @@
       - rule_6.2.5
 
 - name: "SCORED | 6.2.6 | PATCH | Ensure root PATH Integrity"
-  command: /bin/true
+  script: "script/6-2-6.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_6|bool
@@ -265,7 +269,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.7 | PATCH | Ensure all users' home directories exist"
-  command: /bin/true
+  script: "script/6-2-7.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_7|bool
@@ -277,8 +282,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.8 | PATCH | Ensure users' home directories permissions are 750 or more restrictive"
-  command: /bin/true
-  changed_when: no
+  script: "script/6-2-8.sh"
+  ignore_errors: yes
   when:
       - rhel7cis_rule_6_2_8|bool
   tags:
@@ -289,7 +294,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.9 | PATCH | Ensure users own their home directories"
-  command: /bin/true
+  script: "script/6-2-9.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_9|bool
@@ -301,7 +307,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.10 | PATCH | Ensure users' dot files are not group or world writable"
-  command: /bin/true
+  script: "script/6-2-10.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_10|bool
@@ -363,7 +370,8 @@
       - rule_6.2.14
 
 - name: "SCORED | 6.2.15 | PATCH | Ensure all groups in /etc/passwd exist in /etc/group"
-  command: /bin/true
+  script: "script/6-2-15.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_15|bool
@@ -375,7 +383,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.16 | PATCH | Ensure no duplicate UIDs exist"
-  command: /bin/true
+  script: "script/6-2-16.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_16|bool
@@ -387,7 +396,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.17 | PATCH | Ensure no duplicate GIDs exist"
-  command: /bin/true
+  script: "script/6-2-17.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_17|bool
@@ -399,7 +409,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.18 | PATCH | Ensure no duplicate user names exist"
-  command: /bin/true
+  script: "script/6-2-18.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_18|bool
@@ -411,7 +422,8 @@
       - notimplemented
 
 - name: "SCORED | 6.2.19 | PATCH | Ensure no duplicate group names exist"
-  command: /bin/true
+  script: "script/6-2-19.sh"
+  ignore_errors: yes
   changed_when: no
   when:
       - rhel7cis_rule_6_2_19|bool

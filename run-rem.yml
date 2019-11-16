@@ -4,4 +4,4 @@
   become: True
   tasks:
     - name: remote 
-      script: unown.sh
+      script: ./roles/RHEL7-CIS/files/script/6-2-7.sh

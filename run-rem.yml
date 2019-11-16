@@ -1,0 +1,7 @@
+---
+- name: run remote
+  hosts: all
+  become: True
+  tasks:
+    - name: remote 
+      script: unown.sh
